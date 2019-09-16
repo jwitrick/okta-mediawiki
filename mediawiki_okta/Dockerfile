@@ -47,3 +47,4 @@ RUN mkdir /var/simplesamlphp/data/db && \
 # COPY wiki/extensions/SimpleSAMLphp/includes/SimpleSAMLphp.php /var/www/html/wiki/extensions/SimpleSAMLphp/includes/
 # COPY etc/apache2/conf-available/docker-php.conf /etc/apache2/conf-available/docker-php.conf
 
+# COPY wiki/LocalSettings.php /var/www/html/wiki/LocalSettings.php
