@@ -27,7 +27,7 @@ $config = [
      * external url, no matter where you come from (direct access or via the
      * reverse proxy).
      */
-    'baseurlpath' => getenv('BASE_URL') .''. getenv('SIMPLESAML_PATH’),
+    'baseurlpath' => getenv('BASE_URL') .''. getenv('SIMPLESAML_PATH'),
 
     /*
      * The 'application' configuration array groups a set configuration options
