@@ -1,0 +1,17 @@
+# MediaWiki with MariaDB and SimpleSAML
+#
+# Access via "http://localhost:9000”
+#   (or "http://$(docker-machine ip):9000” if using docker-machine)
+version: '3'
+services:
+  mediawiki:
+    image: okta-simplesamlphp
+    restart: always
+    ports:
+      - 9000:80
+    links:
+      - database
+    environment:
+      SIMPLESAML_PATH: '/simplesaml/;'
+      BASE_URL: 'http://localhost:9000'
+      OKTA_METADATA_URL: 'https://<REPLACE_WITH_YOUR_SPECIFIC_SAML>/sso/saml/metadata' # Production Metadata
