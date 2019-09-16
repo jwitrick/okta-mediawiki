@@ -45,5 +45,5 @@ RUN mkdir /var/simplesamlphp/data/db && \
 # COPY simplesamlphp/saml-autoconfig.php /var/simplesamlphp/saml-autoconfig.php
 
 # COPY wiki/extensions/SimpleSAMLphp/includes/SimpleSAMLphp.php /var/www/html/wiki/extensions/SimpleSAMLphp/includes/
-# COPY apache2/conf-available/docker-php.conf /etc/apache2/conf-available/docker-php.conf
+# COPY etc/apache2/conf-available/docker-php.conf /etc/apache2/conf-available/docker-php.conf
 

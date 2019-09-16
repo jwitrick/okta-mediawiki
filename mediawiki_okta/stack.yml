@@ -13,7 +13,7 @@ services:
       - database
     environment:
       WIKI_PATH: '/wiki'
-      SIMPLESAML_PATH: '/simplesaml/;'
+      SIMPLESAML_PATH: '/simplesaml/'
       BASE_URL: 'http://localhost:9000'
       OKTA_METADATA_URL: 'https://<REPLACE_WITH_YOUR_SPECIFIC_SAML>/sso/saml/metadata' # Production Metadata
       MEDIAWIKI_DATABASE_HOST: 'database'
