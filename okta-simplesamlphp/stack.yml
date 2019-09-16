@@ -1,10 +1,11 @@
-# MediaWiki with MariaDB and SimpleSAML
+# SimpleSAML
 #
 # Access via "http://localhost:9000”
 #   (or "http://$(docker-machine ip):9000” if using docker-machine)
 version: '3'
 services:
-  mediawiki:
+  simplesaml:
+    # image: jwitrick/okta-simplesamlphp
     image: okta-simplesamlphp
     restart: always
     ports:

@@ -1,4 +1,4 @@
-FROM unicon/simplesamlphp as simplesamlphp
+FROM jwitrick/okta-simplesamlphp as simplesamlphp
 
 FROM mediawiki:1.32.1
 
